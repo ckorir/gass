@@ -1,0 +1,137 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+h1 {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Cosi Azure";
+    font-size: 84px;
+    color: rgba(255, 255, 255, 0.692);
+}
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    width: 0%;
+    
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 30;
+    pointer-events: none;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+.button2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 17%;
+}
+
+.button a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    transition: 0.3s;
+    
+}
+.button2 a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    transition: 0.3s;
+}
+.button:hover a {
+    background: white;
+    color: #161616;
+    transition: 0.3s;
+}
+.button2:hover a {
+    background: white;
+    color: #161616;
+    transition: 0.3s;
+}
+input[type=text], select {
+    padding: 4px;
+    border-radius: 7px;
+    background-color:  rgba(212, 226, 236, 0.411);
+    margin-bottom: 2%;
+    width: 60%;
+  }
+  input[type=email] {
+    padding: 4px;
+    border-radius: 7px;
+    background-color:  rgba(212, 226, 236, 0.411);
+    margin-bottom: 2%;
+    width: 60%;
+  }
+  input[type=number], select {
+    padding: 4px;
+    border-radius: 7px;
+    background-color:  rgba(212, 226, 236, 0.411);
+    margin-bottom: 2%;
+    width: 60%;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+  textarea {
+    resize: none;
+    background-color:  rgba(212, 226, 236, 0.411);
+    border-radius: 7px;
+    width: 60%;
+  }
+
+.order{
+    text-align: center;
+    padding-top: 12%;
+}
+.btn{
+    background-color:  rgba(212, 226, 236, 0.411);
+    margin-top: 0.1%;
+    width: 10%;
+}
+.txt{
+   
+    
+    transform: translate(-50%, -400%);
+    font-family: "Cosi Azure";
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.692); 
+}
+::placeholder {
+    color: rgb(202, 192, 192);
+  }
