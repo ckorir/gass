@@ -10,18 +10,18 @@ function delay(n) {
 function pageTransition() {
     var tl = gsap.timeline();
     tl.to(".loading-screen", {
-        duration: 1.2,
+        duration: 1.7,
         width: "100%",
         left: "0%",
         ease: "Expo.easeInOut",
     });
 
     tl.to(".loading-screen", {
-        duration: 1,
+        duration: 1.7,
         width: "100%",
         left: "100%",
         ease: "Expo.easeInOut",
-        delay: 0.3,
+        delay: 0.2,
     });
     tl.set(".loading-screen", { left: "-100%" });
 }
