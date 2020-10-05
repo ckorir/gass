@@ -191,3 +191,7 @@ textarea {
     height: 400px;
     width: 100%;
 }
+
+.swal{
+    background-color: rgba(6, 49, 28, 0.452);
+}

@@ -57,11 +57,22 @@ $(function () {
     });
 });
 
-function initmap(){
-    var options = {
-        zoom: 8,
-        center:{lng:-1.328135,lat:36.789140}
+function confirm(){
+    var name = document.getElementById("name").value;
+    var number = document.getElementById("number").value;
+    var amount = document.getElementById("amount").value;
+    
+    if(name === '' || number === '' || amount === ''){
+        swal({
+            title: "Error",
+            text: "You haven't filled all fields!",
+            icon: "warning",
+          });
+    }
+    
+    else{
+        swal("Order Confirmed", "You will be contacted shortly");
     }
 
-    var map = new google.maps.Map(document.getElementById('map'), options);
+    event.preventDefault();
 }
