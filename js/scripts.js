@@ -10,18 +10,18 @@ function delay(n) {
 function pageTransition() {
     var tl = gsap.timeline();
     tl.to(".loading-screen", {
-        duration: 1.7,
+        duration: 1.5,
         width: "100%",
         left: "0%",
         ease: "Expo.easeInOut",
     });
 
     tl.to(".loading-screen", {
-        duration: 1.7,
+        duration: 1.5,
         width: "100%",
         left: "100%",
         ease: "Expo.easeInOut",
-        delay: 0.2,
+        delay: 0.1,
     });
     tl.set(".loading-screen", { left: "-100%" });
 }
@@ -56,3 +56,12 @@ $(function () {
         ],
     });
 });
+
+function initmap(){
+    var options = {
+        zoom: 8,
+        center:{lng:-1.328135,lat:36.789140}
+    }
+
+    var map = new google.maps.Map(document.getElementById('map'), options);
+}
