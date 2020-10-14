@@ -61,6 +61,7 @@ function confirm(){
     var name = document.getElementById("name").value;
     var number = document.getElementById("number").value;
     var amount = document.getElementById("amount").value;
+    var product = document.getElementsByName("prod").value;
     
     if(name === '' || number === '' || amount === ''){
         swal({
@@ -71,8 +72,12 @@ function confirm(){
     }
     
     else{
-        swal("Order Confirmed", "You will be contacted shortly");
+        swal({
+            icon: "success",
+            title: "Order Confirmed",
+            text: "You will be contacted shortly"
+          });
     }
 
-    event.preventDefault();
+
 }

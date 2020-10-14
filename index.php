@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,7 +30,7 @@
                     Gas Up &#128747;
                 </h1>
                 <div class="animate-this button">
-                    <a href="form.html">Make an order</a>
+                    <a href="form.php">Make an order</a>
                 </div>
             </div>
         </main>

@@ -1,3 +1,7 @@
+<?php
+ include_once 'dbh.php';
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,23 +25,24 @@
 
         <main data-barba="container" data-barba-namespace="about-section">
             <div class="header order">
-             <form>
+             <form action="info.php" method="POST">
                  <h1 class="txt">Fill form to make your order</h1>
                 Name *<br><input type="text" id="name" name="name" placeholder="Details required"><br> 
                 Phone Number*<br><input type="number" id="number" name="phone" placeholder="Details required"><br>
-                What would you like?<br><div class="product"><input type="radio" id="eddie" name= "prod"><label for="edible">Edible</label><input type="radio" id="blunt" name= "prod"><label for="blunt">Blunt</label></div>
+                What would you like?<br><div class="product"><input type="radio" id="eddie" name= "prod" value="eddie"><label for="edible">Edible</label><input type="radio" id="blunt" name= "prod" value="blunt"><label for="blunt">Blunt</label></div>
                 How many*<br><input type="number" id="amount" name="amount" placeholder="Blunt ksh50/ Edible ksh100"><br>
                 Pick a location near you:<br>
                 <select id="place" name="place">
-                    <option value="volvo">Galleria mall</option>
-                    <option value="saab">Cleanshelf Langata</option>
-                    <option value="fiat">T-mall</option>
-                    <option value="audi">Langata Hospital</option>
+                    <option value="none">None</option>
+                    <option value="Galleria">Galleria mall</option>
+                    <option value="Cleanshelf Langata">Cleanshelf Langata</option>
+                    <option value="T-mall">T-mall</option>
+                    <option value="Langata Hospital">Langata Hospital</option>
                   </select><br>
-                <input type="submit" value="Confirm" class="btn" onclick="confirm()">
+                <input type="submit" value="Confirm" class="btn" onclick="confirm()" name="submit">
              </form>
                 <div class="animate-this button2 ">
-                    <a href="index.html">Go Back to Home</a>
+                    <a href="index.php">Go Back to Home</a>
                 </div>
             </div>
         </main>
@@ -53,3 +58,6 @@
         <script src="js/jquery-3.4.1.js"></script>
     </body>
 </html>
+
+
+
